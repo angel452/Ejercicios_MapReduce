@@ -1,0 +1,8 @@
+2024-10-01 http://example.com/page1
+2024-10-01 http://example.com/page2
+2024-10-01 http://example.com/page1
+2024-10-02 http://example.com/page3
+2024-10-02 http://example.com/page1
+2024-10-03 http://example.com/page2
+2024-10-03 http://example.com/page3
+2024-10-03 http://example.com/page1

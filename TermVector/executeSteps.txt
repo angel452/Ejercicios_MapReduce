@@ -1,0 +1,4 @@
+javac -classpath $(hadoop classpath) -d out TermVectorMapper.java TermVectorReducer.java TermVectorJob.java
+jar cvf TermVectorJob.jar -C out/ .
+hadoop jar s3://tu-bucket/TermVectorJob.jar TermVectorJob s3://tu-bucket/input.txt s3://tu-bucket/output/
+

@@ -1,0 +1,4 @@
+javac -classpath $(hadoop classpath) -d out UrlCountMapper.java UrlCountReducer.java UrlCountJob.java
+jar cvf UrlCountJob.jar -C out/ .
+hadoop jar s3://tu-bucket/UrlCountJob.jar UrlCountJob s3://tu-bucket/input.txt s3://tu-bucket/output/
+

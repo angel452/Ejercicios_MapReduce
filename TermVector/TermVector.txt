@@ -1,0 +1,4 @@
+http://example.com/page1    "This is a sample document. This document contains some sample text."
+http://example.com/page2    "Another document with different text. This is another example document."
+http://example.com/page1    "Sample text from the first document. This document is interesting."
+http://example.com/page3    "A completely different document that talks about something else."

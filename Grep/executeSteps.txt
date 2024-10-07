@@ -1,0 +1,4 @@
+javac -classpath $(hadoop classpath) -d out GrepMapper.java GrepReducer.java GrepJob.java
+jar cvf GrepJob.jar -C out/ .
+hadoop jar s3://tu-bucket/GrepJob.jar GrepJob s3://tu-bucket/input.txt s3://tu-bucket/output/ "tu_patron"
+

@@ -1,0 +1,4 @@
+javac -classpath $(hadoop classpath) -d out LinkGraphMapper.java LinkGraphReducer.java LinkGraphJob.java
+jar cvf LinkGraphJob.jar -C out/ .
+hadoop jar s3://tu-bucket/LinkGraphJob.jar LinkGraphJob s3://tu-bucket/input.txt s3://tu-bucket/output/
+
